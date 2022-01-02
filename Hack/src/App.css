@@ -71,6 +71,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .Navibar li:last-child {
@@ -336,8 +337,10 @@ background: linear-gradient(0deg, rgb(155, 179, 144) 0%, rgb(228, 253, 211) 100%
   background:url('https://i.ibb.co/qCVFNyh/1159206.png');
 }
 .senderform{
-display: block;
-justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 height:80vh;
 width:80vh;
 background: url(https://i.ibb.co/3ysXSnF/4559562.jpg);
@@ -351,3 +354,179 @@ border: 10px solid #FFD700;
   
 }
 
+.senderform form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  justify-content: space-around;
+  }
+
+.senderform form input{
+  opacity:0.8;
+  padding: 5px;
+  border:none;
+  margin: 5px;
+  height:50%;
+  flex-grow: 1;
+  font-size: 1.5em;
+  }
+
+.senderform form input:focus{
+    outline: none;
+    border-bottom: 5px solid #FFD700;
+}
+
+.senderform form input::placeholder {
+  font-size: 1em !important;
+  font-family: 'Nunito', sans-serif;
+  opacity: 1;
+}
+
+.submitbutton {
+  background-color: rgb(204,197,158);
+  width:fit-content;
+  color:white;
+  padding: 5px;
+  margin:10px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 5px 0px 5px 0px;
+  box-shadow: 2px 2px whitesmoke;
+}
+
+.submitbutton:hover{
+  border-radius: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+.qr{
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.qr p{
+  background-color: yellowgreen;
+  color:whitesmoke;
+  width:100%;
+}
+
+.packageQrCode{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80vh;
+  width: 80vw;
+  border: 5px dotted black
+}
+
+.packageQrCode p{
+  background-color: rgb(44, 44, 44);
+  font-size: 1.3em;
+}
+
+.packdetails{
+  display : grid;
+  grid-template-columns: 1fr  1fr;
+}
+.packdetails p{
+  background-color: white;
+  font-size: 1em;
+  color:black
+}
+.receivelink{
+  font-size: large;
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  
+}
+.receivelink a{
+  text-decoration: none;
+  color:black;
+  font-family: 'Nunito', sans-serif;
+}
+.failedstatus{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.failedstatus img{
+  width: 5em;
+}
+
+.failedstatus .failed{
+  background-color: crimson;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  padding:10px;
+  font-size:3em;
+  margin-bottom: 0;
+}
+
+.failedstatus .failedinfo{
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 5px;
+  color:white;
+  font-size: 1.3em;
+  background-color: rgb(20, 113, 220);
+  
+}
+
+.successstatus{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.successstatus img{
+  width: 5em;
+}
+
+.successstatus .success{
+  background-color:rgb(85, 170, 0);
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  padding:10px;
+  font-size:3em;
+  margin-bottom: 0;
+}
+
+.successstatus .successinfo{
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 5px;
+  color:white;
+  font-size: 1.3em;
+  background-color: rgb(20, 113, 220);
+  
+}
+
+.checkstatus{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://i.ibb.co/m8g701B/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+}
+.checkstatus h1{
+  color:rgb(158, 11, 70);
+}
+.checkstatus input{
+  font-size: 1.5em;
+  vertical-align: baseline;
+  border-radius: 0;
+  width :30vw;
+  height: 10vh;
+  border: none;
+  border-bottom: solid 5px chartreuse;
+}
+
+.checkstatus input:focus{
+  outline:none;
+
+}
