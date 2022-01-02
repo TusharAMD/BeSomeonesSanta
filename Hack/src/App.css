@@ -95,6 +95,10 @@ body{
   justify-content: center;
   margin: 0;
   padding: 0;
+  
+}
+.gettingStarted a{
+  text-decoration: none;
 }
 
 .custom-btn {
@@ -324,3 +328,26 @@ background: linear-gradient(0deg, rgb(155, 179, 144) 0%, rgb(228, 253, 211) 100%
   }
 
 }
+
+.sender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url('https://i.ibb.co/qCVFNyh/1159206.png');
+}
+.senderform{
+display: block;
+justify-content: center;
+height:80vh;
+width:80vh;
+background: url(https://i.ibb.co/3ysXSnF/4559562.jpg);
+
+border: 10px solid #FFD700;
+}
+.formHeading{
+  font-family: 'Mulish', sans-serif;
+  color:white;
+  font-size: 1.5em;
+  
+}
+

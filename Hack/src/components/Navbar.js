@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import Homepage from './Homepage'
+import SenderForm from './SenderForm'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Navbar(){
@@ -20,8 +21,7 @@ return(
 
   <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Homepage />}></Route>
-
+        <Route exact path="/" element={<Homepage />} />
       </Routes>
     </BrowserRouter>
 
@@ -44,7 +44,7 @@ return(
   <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Homepage />}></Route>
-
+        <Route exact path="/senderform" element={<SenderForm />}/>
       </Routes>
     </BrowserRouter>
   </>
